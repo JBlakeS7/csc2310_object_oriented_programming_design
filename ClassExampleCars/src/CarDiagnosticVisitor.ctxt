@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CarDiagnosticVisitor
+comment1.params=tolerance_percentage
+comment1.target=CarDiagnosticVisitor(double)
+comment2.params=tolerance_percentage
+comment2.target=void\ setTolerancePercentage(double)
+comment3.params=
+comment3.target=double\ getTolerancePercentage()
+comment4.params=car
+comment4.target=void\ visit(Car)
+comment5.params=wheel
+comment5.target=void\ visit(Wheel)
+comment6.params=engine
+comment6.target=void\ visit(Engine)
+numComments=7

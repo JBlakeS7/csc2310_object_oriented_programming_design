@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CarPartVisitorWithReport
+comment1.params=
+comment1.target=CarPartVisitorWithReport()
+comment2.params=
+comment2.target=java.lang.String\ getReport()
+comment3.params=
+comment3.target=void\ resetReport()
+numComments=4

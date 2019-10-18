@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Engine
+comment1.params=oil_level\ radiator_level
+comment1.target=Engine(double,\ double)
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment11.params=visitor
+comment11.target=void\ accept(CarPartVisitor)
+comment2.params=
+comment2.target=double\ getOilLevel()
+comment3.params=
+comment3.target=double\ getOptimalOilLevel()
+comment4.params=
+comment4.target=double\ getRadiatorLevel()
+comment5.params=
+comment5.target=double\ getOptimalRadiatorLevel()
+comment6.params=
+comment6.target=void\ leakOil()
+comment7.params=amount
+comment7.target=void\ addOil(double)
+comment8.params=
+comment8.target=void\ leakRadiator()
+comment9.params=amount
+comment9.target=void\ addRadiator(double)
+numComments=12

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=CenterFrame
+comment0.text=\r\n\ Extend\ this\ class\ to\ set\ some\ default\ behavior\ for\ JFrames.\ <br>\r\n
+comment1.params=
+comment1.target=int[]\ getScreenDimensions()
+comment2.params=width\ height\ title
+comment2.target=CenterFrame(int,\ int,\ java.lang.String)
+comment3.params=width\ height
+comment3.target=void\ center(int,\ int)
+numComments=4

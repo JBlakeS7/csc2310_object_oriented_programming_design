@@ -1,0 +1,36 @@
+
+<project name="Brass" default="help" basedir=".">
+
+   <property name="build-directory" value="build"/>
+   <property name="source-directory" value="src"/>
+   <property name="jdom-jar" value="/${drive-letter}/Java/jdom-2.0.6/jdom-2.0.6.jar"/>
+
+   <path id="class-path">
+      <pathelement location="${build-directory}"/>
+      <pathelement location="${jdom-jar}"/>
+   </path>
+
+   <target name="help">
+      <echo>
+         Brass build management for Lab05.
+      </echo>
+   </target>
+
+   <target name="clean">
+      <delete dir="build"/>
+      <mkdir dir="build"/>
+   </target>
+   
+   <target name="build" depends="clean">
+      <javac srcdir="${source-directory}" destdir="${build-directory}" includeantruntime="false">
+         <classpath refid="class-path"/>
+      </javac>
+   </target>
+
+   <target name="run" depends="build">
+      <java fork="true" failonerror="yes" classname="brass.BrassDriver">
+         <classpath refid="class-path"/>
+      </java>
+   </target>
+
+</project>

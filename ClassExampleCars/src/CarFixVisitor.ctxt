@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CarFixVisitor
+comment1.params=car
+comment1.target=void\ visit(Car)
+comment2.params=engine
+comment2.target=void\ visit(Engine)
+comment3.params=wheel
+comment3.target=void\ visit(Wheel)
+numComments=4
