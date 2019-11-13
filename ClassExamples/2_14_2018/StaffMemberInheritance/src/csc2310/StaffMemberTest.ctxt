@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=StaffMemberTest
+comment0.text=\r\n\ The\ test\ class\ StaffMemberTest.\r\n\r\n\ @author\ \ Martha\ Kosa\r\n\ @version\ 02.16.2018\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\r\n\ Sets\ up\ the\ test\ fixture.\r\n\r\n\ Called\ before\ every\ test\ case\ method.\r\n
+comment2.params=
+comment2.target=void\ testAddressesForNonAliasing()
+comment2.text=For\ each\ test,\ write\ a\ method
+comment3.params=
+comment3.target=void\ testPayDay()
+comment4.params=
+comment4.target=void\ tearDown()
+comment4.text=\r\n\ Tears\ down\ the\ test\ fixture.\r\n\r\n\ Called\ after\ every\ test\ case\ method.\r\n
+numComments=5

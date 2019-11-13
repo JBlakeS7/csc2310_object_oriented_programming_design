@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=StaffMember
+comment0.text=\r\n\ Represents\ a\ generic\ staff\ member.\r\n
+comment1.params=that
+comment1.target=int\ compareTo(StaffMember)
+comment2.params=name\ address\ phone
+comment2.target=StaffMember(java.lang.String,\ Address,\ java.lang.String)
+comment2.text=\r\n\ Sets\ up\ a\ staff\ member\ using\ the\ specified\ information.\r\n
+comment3.params=
+comment3.target=double\ pay()
+comment3.text=\r\n\ Derived\ classes\ must\ define\ the\ pay\ method\ for\ each\ type\ of\ employee.\r\n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment5.params=
+comment5.target=Address\ getAddress()
+comment6.params=
+comment6.target=java.lang.String\ getPhone()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Returns\ a\ string\ including\ the\ basic\ employee\ information.\r\n
+comment8.params=other
+comment8.target=boolean\ equals(java.lang.Object)
+comment9.params=staff
+comment9.target=boolean\ equals(StaffMember)
+numComments=10

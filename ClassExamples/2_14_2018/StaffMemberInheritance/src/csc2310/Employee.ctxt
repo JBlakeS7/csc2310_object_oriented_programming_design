@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Employee
+comment0.text=\r\n\ \ Represents\ a\ general\ paid\ employee.\r\n
+comment1.params=that
+comment1.target=int\ compareTo(StaffMember)
+comment2.params=name\ address\ phone\ ssn\ rate
+comment2.target=Employee(java.lang.String,\ Address,\ java.lang.String,\ java.lang.String,\ double)
+comment3.params=
+comment3.target=java.lang.String\ getSSN()
+comment4.params=
+comment4.target=double\ pay()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment6.params=other
+comment6.target=boolean\ equals(java.lang.Object)
+comment7.params=other
+comment7.target=boolean\ equals(StaffMember)
+comment8.params=employee
+comment8.target=boolean\ equals(Employee)
+numComments=9

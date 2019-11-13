@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=StaffDriver
+comment1.params=staff_list
+comment1.target=double\ payDay(StaffMember[])
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=
+comment3.target=StaffMember[]\ setUp()
+comment3.text=\r\n\ \ Sets\ up\ the\ list\ of\ staff\ members.\r\n
+numComments=4

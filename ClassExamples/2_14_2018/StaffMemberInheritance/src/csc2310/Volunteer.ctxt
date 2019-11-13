@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Volunteer
+comment0.text=\r\n\ \ Represents\ a\ staff\ member\ that\ works\ as\ a\ volunteer.\r\n
+comment1.params=name\ address\ phone
+comment1.target=Volunteer(java.lang.String,\ Address,\ java.lang.String)
+comment1.text=\r\n\ \ Sets\ up\ a\ volunteer\ using\ the\ specified\ information.\r\n
+comment2.params=
+comment2.target=double\ pay()
+comment2.text=\r\n\ \ Returns\ a\ zero\ pay\ value\ for\ this\ volunteer.\r\n
+numComments=3
