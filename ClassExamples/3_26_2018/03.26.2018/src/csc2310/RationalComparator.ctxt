@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=RationalComparator
+comment0.text=\r\n//provided\ Java\ interface\r\npublic\ interface\ Comparator<T>\r\n{\r\n\tpublic\ int\ compare(T\ item_1,\ T\ item_2);\r\n}\r\n
+comment1.params=TOLERANCE
+comment1.target=RationalComparator(double)
+comment2.params=rat1\ rat2
+comment2.target=int\ compare(RationalNumber,\ RationalNumber)
+numComments=3

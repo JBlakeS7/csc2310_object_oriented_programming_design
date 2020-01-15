@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=NewCarCommand
+comment1.params=
+comment1.target=NewCarCommand()
+comment2.params=car
+comment2.target=void\ execute(Car)
+comment3.params=
+comment3.target=int\ getNumNewCars()
+numComments=4

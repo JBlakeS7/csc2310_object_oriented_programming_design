@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=AcceptVisitor
+comment1.params=sv
+comment1.target=void\ accept(StaffVisitor)
+numComments=2

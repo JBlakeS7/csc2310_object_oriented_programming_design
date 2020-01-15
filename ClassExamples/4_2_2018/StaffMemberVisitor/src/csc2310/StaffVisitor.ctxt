@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=StaffVisitor
+comment1.params=emp
+comment1.target=void\ visit(Employee)
+comment2.params=emp
+comment2.target=void\ visit(Volunteer)
+comment3.params=emp
+comment3.target=void\ visit(Hourly)
+comment4.params=emp
+comment4.target=void\ visit(Executive)
+numComments=5

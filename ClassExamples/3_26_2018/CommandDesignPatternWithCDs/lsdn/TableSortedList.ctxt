@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TableSortedList()
+comment1.params=
+comment1.target=boolean\ tableIsEmpty()
+comment2.params=
+comment2.target=int\ tableSize()
+comment3.params=searchKey
+comment3.target=KeyedItem\ tableRetrieve(java.lang.Comparable)
+comment4.params=item
+comment4.target=void\ tableInsert(KeyedItem)
+comment5.params=searchKey
+comment5.target=boolean\ tableDelete(java.lang.Comparable)
+comment6.params=
+comment6.target=java.util.Iterator\ iterator()
+numComments=7

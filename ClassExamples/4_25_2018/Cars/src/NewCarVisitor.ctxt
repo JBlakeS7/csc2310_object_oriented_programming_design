@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=NewCarVisitor
+comment1.params=
+comment1.target=NewCarVisitor()
+comment2.params=car
+comment2.target=void\ visit(Car)
+comment3.params=engine
+comment3.target=void\ visit(Engine)
+comment4.params=wheel
+comment4.target=void\ visit(Wheel)
+comment5.params=
+comment5.target=int\ getNumNewCars()
+numComments=6

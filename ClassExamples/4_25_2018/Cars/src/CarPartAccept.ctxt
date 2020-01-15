@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=CarPartAccept
+comment1.params=visitor
+comment1.target=void\ accept(CarPartVisitor)
+numComments=2

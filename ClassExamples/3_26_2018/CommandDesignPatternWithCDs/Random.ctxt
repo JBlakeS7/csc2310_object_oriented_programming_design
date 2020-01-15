@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=low\ high
+comment0.target=double\ randomFloat(int,\ int)
+comment0.text=\ \r\n\ \ Returns\ a\ floating\ point\ number\ between\ low\ and\ high.\r\n\ \ rand.nextDouble\ gives\ a\ number\ between\ 0.0\ (inclusive)\ and\ 1.0\ (exclusive)\r\n
+comment1.params=low\ high
+comment1.target=int\ randomInt(int,\ int)
+comment1.text=\ \r\n\ \ Returns\ an\ integer\ between\ low\ and\ high\ (inclusive\ of\ both).\ \r\n\ \ rand.nextInt(num)\ gives\ an\ integer\ between\ 0.0\ (inclusive)\ and\ num\ -\ 1\ (inclusive)\r\n\ \ Example--\ \ what\ if\ I\ want\ a\ number\ between\ 3\ and\ 7?\r\n
+numComments=2

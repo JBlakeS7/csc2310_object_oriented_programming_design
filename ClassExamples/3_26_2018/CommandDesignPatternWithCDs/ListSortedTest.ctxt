@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=iter
+comment1.target=void\ showList(java.util.Iterator)
+comment2.params=fileName\ list
+comment2.target=void\ readMusic(java.lang.String,\ lsdn.ListSortedInterface)
+numComments=3

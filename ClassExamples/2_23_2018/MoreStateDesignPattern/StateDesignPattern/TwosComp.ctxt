@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TwosCompState\ getState1()
+comment0.text=\ public\ TwosComp()\ \r\n\ \ \ {\r\n\ \ \ \ \ \ \ state1\ \=\ new\ State1();\r\n\ \ \ \ \ \ \ state0\ \=\ new\ State0(this);\r\n\ \ \ \ \ \ \ current\ \=\ state0;\r\n}
+comment1.params=
+comment1.target=TwosCompState\ getState0()
+comment2.params=state
+comment2.target=void\ nextState(TwosCompState)
+comment3.params=input
+comment3.target=char\ obtainTwosComp(char)
+numComments=4

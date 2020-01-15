@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Sorting
+comment0.text=\r\n\ \ Utility\ class\ to\ provide\ sorting\ algorithms.\r\n
+comment1.params=sort
+comment1.target=void\ selectionSort(java.lang.Comparable[])
+comment1.text=\r\n\ Sorts\ the\ specified\ array\ of\ Comparable\ objects\ using\ the\ selection\r\n\ sort\ algorithm.\ <br>\r\n\ The\ entire\ array\ is\ sorted.<br>\ \ \r\n
+comment2.params=sort\ n
+comment2.target=void\ selectionSort(java.lang.Comparable[],\ int)
+comment2.text=\r\n\ Sorts\ the\ specified\ array\ of\ Comparable\ objects\ using\ the\ selection\r\n\ sort\ algorithm.\ <br>\ \ \r\n\ The\ number\ of\ items\ sorted\ (starting\ at\ the\ beginning\ of\ the\ array)\ is\ n.\r\n
+comment3.params=sort
+comment3.target=void\ insertionSort(java.lang.Comparable[])
+comment3.text=\r\n\ Sorts\ the\ specified\ array\ of\ Comparable\ objects\ using\ the\ insertion\r\n\ sort\ algorithm.\ <br>\r\n\ The\ entire\ array\ is\ sorted.<br>\ \ \r\n
+comment4.params=sort\ n
+comment4.target=void\ insertionSort(java.lang.Comparable[],\ int)
+comment4.text=\r\n\ Sorts\ the\ specified\ array\ of\ Comparable\ objects\ using\ the\ insertion\r\n\ sort\ algorithm.\ <br>\ \ \r\n\ The\ number\ of\ items\ sorted\ (starting\ at\ the\ beginning\ of\ the\ array)\ is\ n.\r\n
+numComments=5

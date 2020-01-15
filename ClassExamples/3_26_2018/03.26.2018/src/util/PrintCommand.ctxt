@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=PrintCommand
+comment1.params=element
+comment1.target=void\ execute(java.lang.Object)
+numComments=2

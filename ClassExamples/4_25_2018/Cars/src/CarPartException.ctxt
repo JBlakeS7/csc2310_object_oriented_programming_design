@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CarPartException
+comment1.params=problem
+comment1.target=CarPartException(java.lang.String)
+comment2.params=
+comment2.target=CarPartException()
+numComments=3

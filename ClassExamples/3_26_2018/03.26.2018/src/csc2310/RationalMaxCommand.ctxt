@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RationalMaxCommand
+comment1.params=comparator
+comment1.target=RationalMaxCommand(RationalComparator)
+comment2.params=rn
+comment2.target=void\ execute(RationalNumber)
+comment3.params=
+comment3.target=RationalNumber\ getMax()
+numComments=4

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=SimulateCarTroubleVisitor
+comment1.params=
+comment1.target=SimulateCarTroubleVisitor()
+comment2.params=
+comment2.target=void\ reset()
+comment3.params=car
+comment3.target=void\ visit(Car)
+comment4.params=engine
+comment4.target=void\ visit(Engine)
+comment5.params=wheel
+comment5.target=void\ visit(Wheel)
+numComments=6

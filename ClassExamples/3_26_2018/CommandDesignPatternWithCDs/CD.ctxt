@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=title\ artist\ year\ rating\ tracks
+comment0.target=CD(java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment1.params=rating
+comment1.target=void\ setRating(int)
+comment2.params=
+comment2.target=int\ getRating()
+comment3.params=
+comment3.target=java.lang.String\ getArtist()
+comment4.params=file
+comment4.target=void\ writeCD(FileIO)
+comment5.params=index
+comment5.target=Song\ getSong(int)
+comment6.params=song
+comment6.target=void\ addSong(Song)
+comment7.params=
+comment7.target=int\ getYear()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

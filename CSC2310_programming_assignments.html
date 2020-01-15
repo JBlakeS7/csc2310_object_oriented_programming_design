@@ -1,0 +1,1041 @@
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+<title>CSC 2310 Programming Assignments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<link rel="stylesheet" href="CSC2310_programming_assignments_files/mystyle.css" type="text/css">
+<style>@media print {#ghostery-purple-box {display:none !important}}</style></head>
+<body bgproperties="fixed" class="mystyle" vlink="#FF9D3A" topmargin="0" marginheight="0" link="#333366" bgcolor="#FFFFFF" alink="#FF9D3A">
+
+<p>
+</p><h1><center>CSC 2310 Programming Assignments</center></h1>
+<p>
+
+</p><p><a href="https://mboshart.dyndns.org/~mboshart/CSC_2310-001_Syllabus.pdf">Syllabus</a><br>
+<a href="https://mboshart.dyndns.org/~mboshart/2310examples.html">Examples</a></p>
+
+<p>
+
+<b>General Policies</b>:<br>
+There is to be no sharing of <b>any</b> code, even test drivers.  You will not receive help on the
+extra credit available on some of the assignments.
+
+</p><p>
+
+</p><center>
+<a href="#prog1">Priority Queue Sorting</a> | <a href="#prog2">Decorated Pizzas</a> | <a href="#prog3">Master Mind</a> | <a href="#prog4">MP3 Player</a>
+</center>
+
+<a name="prog1"></a>
+<!--
+<p>Program #1 Priority Queue Sorting <b>11.25%</b><br>
+  Due: 02/10/2017<br>
+  Assignment: </p>
+<p><b>Program Execution:</b>
+
+<p>
+
+Starting files:<br>
+
+<ul>
+   <li><a href="2310programs/program01/prog1_starting_files.zip">prog1_starting_files.zip</a></li>
+</ul>
+
+<p>
+<b>KeyedItem and CD</b>
+<p>
+
+KeyedItem is an abstract class with a getKey() method that returns a String.  Any subclass of KeyedItem
+passes the field to be used for sorting to the KeyedItem constructor.  The CD class should be a subclass
+of KeyedItem and should pass the title field to the KeyedItem constructor as you will sort CDs
+using the CD title as the sort key.
+
+<p>
+<b>Binary Search Tree</b>
+<p>
+
+Complete the code for the BinarySearchTree.
+Place items with duplicate search keys on the right for FIFO behavior.
+
+<p>
+<b>Sorted List Linked</b>
+<p>
+
+Complete the code for the SortedListLinked.
+Place items with duplicate search keys later in the list for FIFO behavior.
+
+<p>
+<b>Adapter Design Pattern</b>
+<p>
+
+The method signatures for a priority queue are as follows:
+
+<p>
+
+&nbsp;&nbsp;&nbsp;public boolean pqIsEmpty()<br>
+&nbsp;&nbsp;&nbsp;public void pqInsert(KeyedItem item)<br>
+&nbsp;&nbsp;&nbsp;public KeyedItem pqRemove()<br>
+
+<p>
+<b>PQBST and PQSLL</b>
+<p>
+
+You will need to write two classes to &quot;adapt&quot; your linked list and binary search tree
+to fit the priority queue specification.
+Name your classes <b>PQBST</b> and <b>PQSLL</b>.
+
+<p>
+<b>PQSort</b>
+<p>
+
+Write a class called <b>PQSort</b> with one static method:
+
+<p>
+
+<ul>
+   <li>public static KeyedItem[] pqSort(KeyedItem[] unsorted_items, boolean tree_or_list)  //no generics</li>
+   <li>public static &lt;E extends KeyedItem&gt; E[] pqSort(E[] unsorted_items, boolean tree)  //generics</li>
+</ul>
+
+<p>
+
+This method simply creates and uses a PQBST or a PQSLL based on the boolean parameter 
+to perform the required sorting.
+
+<p>
+
+<b>CDSort</b>
+
+<p>
+
+Complete CDSort to test your PQSort.  Make sure to add duplicate cds (cds with the same title)
+to check that duplicates remain in FIFO order.
+
+<p>
+<b>Generics</b>
+<p>
+
+Do not start this step until everything above is working.
+
+<p>
+
+Generics enable your work.  You should be able to get rid of all typesafe warnings (except
+the one that we discussed in class).
+Start with the lowest level classes (Node, TreeNode) first and work your way up.
+In classes where you use the getKey method, you will need to use &lt;E extends KeyedItem&gt; in the
+class definition.
+
+<p>
+
+To verify that all warnings (but one) have been eliminated, change the <b>run ant task</b> to use the <b>build-generics task</b> in build.bat.
+
+<p>
+
+<p><b>Program Specification:</b>
+<p>
+
+<ul>
+
+   <li>Min priority queues</li>
+   <ul> 
+      <li>Priority Queue methods</li>    
+      <li>FIFO duplicates</li>  
+      
+   </ul>
+
+   <li>Multiple implementations of the priority queue specification</li>
+   <ul>
+      <li>Adapter design pattern</li>
+      <li>PQBST</li>
+      <li>PQSLL</li>
+   </ul>
+  
+   <li>Generics</li>
+
+</ul>
+
+<p>
+
+<b>Program Documentation:</b>
+
+<p>
+
+<ul>
+   <li>Self Documentation</li>
+   <ul>
+      <li>Choose a standard coding style and follow that style throughout your code.</li>
+      <li>Use intention-revealing names for all variables, methods, and classes.</li>
+   </ul>
+   <li>Class and Method Level Comments</li>
+   <ul>
+      <li>A good way to start writing a class or a method is to complete the comments for the class/method
+          as described next before coding the class/method.  This often results in simpler software.</li>
+      <li>Indicate the intent/purpose of each class/method and how it is to be used.  
+          This may involve a discussion of the data stored in the class. (<b>javadoc</b> this)</li>
+      <li>Provide a high-level implementation overview, indicating why that implementation was selected.</li>
+      <li>Note any design patterns being used.</li>
+      <li>The Driver Class should discuss the problem being solved by the program as a whole.</li>
+   </ul>
+   <li>Additional Method Level <b>Javadoc</b> Comments</li>
+   <ul>
+      <li>Description/purpose</li>
+      <li>Preconditions</li>
+      <li>Postconditions</li>
+      <li>Throws</li>
+   </ul>
+   <li>Instance Variable Comments</li>
+   <ul>
+      <li>Indicate the purpose of each instance variable.</li>
+      <li>Note how the instance variable is intended to be used.</li>
+   </ul>
+   <li>Additional Comments</li>
+   <ul>
+      <li>Inside complex methods, explain what sections of code are doing that may not be obvious
+      and that are too detailed for the method level comments, and indicate why that implementation was selected.</li>
+      <li>If there are several sections of code inside a method requiring these additional comments, decompose the method.</li>
+   </ul>
+</ul>
+
+<p>
+
+<b>Submission:</b>
+<br>Electronic Submission: <b>All files needed to run your program!</b>
+<br>Document according to the above instructions:
+
+<ul>
+   <li>Your sorted list implementation (including the interface)</li>
+   <li>Your sorted tree implementation (including the interface)</li>
+   <li>Your Comparators</li>
+   <li>PQInterface.java</li>
+   <li>SortedListToPQAdapter.java</li>
+   <li>SearchTreeToPQAdapter.java</li>
+   <li>PQFactory.java</li>
+   <li>PQSortInterface.java (the RMI interface)</li>
+   <li>PQSort.java (the RMI service)</li>
+   <li>PQClient.java (the RMI client)</li>
+   <li>PQSortDriver.java (your unit testing--  no need to document)</li>
+</ul>
+-->
+
+<p>
+
+</p><hr>
+
+<a name="prog2"></a>
+
+<p>Program #2 Decorated Pizzas <b>10%</b><br>
+  Due: 10/13/2017<br>
+  Assignment: </p>
+
+Starting files:<br>
+
+<ul>
+   <li><a href="https://mboshart.dyndns.org/~mboshart/2310programs/program02/prog2_starting_files.zip">prog2_starting_files.zip</a></li>
+</ul>
+
+<p>
+
+Your program <b>must</b> work using the provided input files which should recreate the examples shown below.
+Obtain your input using the util.Keyboard class and make sure that your input gets read in correctly using &lt;
+as we have done numerous times in class.
+<b>I will not grade your program if I cannot obtain the input using a text file</b>.
+I will be writing new input files using the same format to grade your programs.
+Your classes should also work with my GUI (provided in the zip), as this ensures that all of your
+methods are designed as described below.
+
+</p><p>
+
+A pizza is <b>composed</b> of a crust (with tomato sauce and cheese) and toppings.
+
+</p><p>
+<b>Crust</b>
+</p><p>
+
+A small pizza costs $5.99, a medium is $7.99, and a large is $9.99.  A hand-tossed crust is an additional
+$0.50, and a deep dish pan crust is an additional $1.00.
+
+</p><p>
+
+Write a <b>CrustSize</b> enum [S(5.99), M(7.99), and L(9.99)] and a <b>CrustType</b> enum
+[THIN(0.00), HAND(0.50), and PAN(1.00)].  
+Place your enums in <b>CrustEnum.java</b>.  Both enums should have cost methods.
+
+</p><p>
+
+Write a Crust class with a constructor that accepts and sets the crust size and type and provide a crustCost method.
+Write a toString method to report the state of the crust.
+Write getCrust (returns "THIN", "HAND", or "PAN") 
+and getSize (returns a <b>char</b> 'S', 'M', or 'L').
+
+</p><p>
+<b>Toppings</b>
+</p><p>
+
+The toppings and their respective abbreviation and cost is as follows:
+
+</p><p>
+
+</p><ul>
+   <li>Pepperoni P 0.99</li>
+   <li>Sausage S 0.99</li>
+   <li>Onions O 0.79</li>
+   <li>GreenPeppers G 0.69</li>
+   <li>Mushrooms M 0.79</li>
+</ul>
+
+<p>
+
+A pizza also has toppings, such as pepperoni, sausage, mushrooms, peppers, and/or onions.  
+One way to handle all of the various combinations of toppings that can be ordered is to have a boolean
+for each possible topping in a Pizza class.  However, this can cause headaches if new toppings
+are added to the menu.  Therefore, you will use the <b>Decorator design pattern</b> to handle the toppings.
+
+</p><p>
+
+Each topping will have an associated class (i.e. a Pepperoni class) that will extend an <b>abstract 
+DecoratedPizza class</b>.  The DecoratedPizza class itself has a private DecoratedPizza instance variable <b>next_pizza_item</b>,
+a no-argument default constructor (<b>next_pizza_item</b> set to null), 
+a constructor that accepts a DecoratedPizza (and sets <b>next_pizza_item</b> to this DecoratedPizza),
+and three methods:<br>
+
+</p><ul>
+   <li>public double pizzaCost() //get the cost from the "next_pizza_item" DecoratedPizza</li>
+   <li>public String toString()  //get the state of the "next_pizza_item" DecoratedPizza</li>
+   <li>public String getImage()  //get the abbreviation of the 
+"next_pizza_item" DecoratedPizza (the topping abbreviation is used to 
+obtain the correct pizza image)</li>
+</ul>
+
+<p>
+
+Whenever a topping is added to the pizza, pass the current DecoratedPizza to the constructor
+for the associated topping (which in turn calls the appropriate constructor in the parent class).  
+This allows a DecoratedPizza with an arbitrary number of toppings to be built up by wrapping, or
+decorating, each topping on top of the current DecoratedPizza (<b>essentially a linked list</b>).
+For example, if pepperoni is added as a first topping, then the DecoratedPizza minus the pepperoni
+is the instance variable stored in the Pepperoni class.
+When the pizza cost is required, get the pizza cost from the
+parent class (which gets the cost from the "next_pizza_item") and add the cost of pepperoni to it,
+returning the total cost including pepperoni.  When the image of the pizza is required,
+get the image file (a String) from the instance variable, and <b>append</b> a "P" to it.
+The toString method works similarly.
+
+</p><p>
+
+Thus, if a new topping is added to the menu, a new class
+is written for that topping, and all of the current code can be used without modification.
+Complete classes for Pepperoni, Onions, Sausage, GreenPeppers, and Mushrooms.
+
+</p><p>
+<b>Pizza</b>
+</p><p>
+
+The pizza class also extends DecoratedPizza, but it has only the Crust as an instance variable,
+so the Pizza class will call the default constructor in its parent class (DecoratedPizza).  
+The Pizza class represents the "base" pizza (with no toppings).  
+The pizzaCost and toString methods will use the Crust instance variable, 
+and the getImage method <b>appends</b> an S, M, or L to the String representing the image file.  
+The size of the pizza will then be the first letter added to the image file String.
+The final image file name will look like MPOS.jpg for a medium pizza with pepperoni, onions, and sausage.  
+This means that the pepperoni topping was selected first, followed by onions and then sausage.  
+The GUI will append the ".jpg" for you.
+
+</p><p>
+<b>Pizza Builder</b>
+</p><p>
+
+There is a lot of input validation that must be done in this program.  You will use the <b>Builder
+design pattern</b> to handle input validation.  The Builder design pattern places all of the input
+validation in a separate class, making the core classes much more readable.
+PizzaBuilder will need to keep track of some information as instance variables.
+One of these is the <b>top link</b> in the DecoratedPizza (the head of the linked list).  
+Use as few instance variables as possible (I will count off for bad designs).
+
+</p><p>
+
+Write the following methods in PizzaBuilder: <br>
+
+</p><ul>
+   <li>protected void buildPizza()</li>  //create a Crust and a Pizza using that Crust based on the user's specifications (the Pizza is now ready for toppings)
+   <li>public PizzaBuilder()  //start with a small, thin pizza with no toppings as the default</li>
+   <li>public boolean setSize(char try_size)  //returns true if the 
+input was valid ("S" or "small", etc., not case sensitive, use the 
+String charAt method to get the first character)</li>
+   <li>public boolean setCrust(String try_crust) //("thin", "hand", or "pan", not case sensitive)</li>
+   <li>public void addTopping(char topping_char)  //compare the topping 
+abbreviation to topping_char to determine which topping to add (using 
+void here is convenient for the PizzaDriver, ignore invalid 
+abbreviations)</li>
+   <li>public DecoratedPizza pizzaDone()  //return the final DecoratedPizza and reset to the default pizza if another pizza is desired</li>
+</ul>
+
+<p>
+
+</p><p>
+<b>Specialty Pizzas</b>
+</p><p>
+
+</p><ul>
+   <li>Ham H 0.89</li>
+   <li>Pineapple A 0.89</li>
+</ul>
+
+<p>
+
+Extend PizzaBuilder and override the buildPizza() method (use super) to add the toppings required to create
+various specialty pizzas like <b>MeatLover's</b>, <b>VeggieLover's</b> and <b>Hawaiian</b> (ham and pineapple).
+Note that you are only adding new behavior in the overridden method.
+These classes should be very short.
+
+</p><p>
+<b>Pizza Driver</b>
+</p><p>
+
+Write a driver, <b>PizzaDriver.java</b>, to allow the user to order an indefinite number of pizzas.
+Place PizzaDriver in the pizza package.
+This is done by creating a PizzaBuilder, which will return the completed DecoratedPizza when pizzaDone is called.
+Include the following methods:
+
+</p><p>
+
+</p><ul>
+   <li>private static int menu() //show the menu choices, wait for and return the valid selection</li>
+   <li>private static void requestSize(PizzaBuilder pizza_builder)  
+//request the crust size, wait for a valid response confirmation from 
+PizzaBuilder</li>
+   <li>private static void requestCrust(PizzaBuilder pizza_builder)  
+//request the crust type, wait for a valid response confirmation from 
+PizzaBuilder</li>
+   <li>private static void requestToppings(PizzaBuilder pizza_builder) 
+//ask for toppings until Done indicated (invalid toppings are ignored)</li>
+   <li>private static void showOrder(DecoratedPizza dec_pizza)  //display the pizza and its total cost</li>
+   <li>public static void main (String[] args) //allow the user to order
+ multiple pizzas if desired, call the other methods, track total cost 
+and number of pizzas</li>
+</ul>
+
+<p>
+
+After a pizza has been specified, display the order details and the cost for the pizza.
+Format your cost output to display two decimal places.  Use the DecimalFormat class (java.text.DecimalFormat).
+Prompt for another pizza and either restart the order process 
+(you will need to create a new PizzaBuilder object), or stop execution, based on the user response.
+
+</p><p>
+
+When the user is done ordering, report the number of pizzas ordered and the total cost
+of all the pizzas ordered.
+
+</p><p>
+<b>Pizza Factory</b>
+</p><p>
+
+The individual topping classes really just hardcode in the values for that topping.  This is not a good class design.
+A much better class would allow these values to be passed to the constructor.
+
+</p><p>
+
+Improve your design by using a <b>PizzaTopping</b> class and a <b>PizzaToppingFactory</b> class (with static methods and no constructor)
+instead of individual topping classes (<b>but don't delete your previous classes</b>, I want to see them).
+New toppings can be added to the menu by adding methods to the PizzaToppingFactory class rather than writing a new class.
+
+</p><p>
+
+</p><ul>
+   <li><b>PizzaTopping constructor</b>: public PizzaTopping(DecoratedPizza pizza_component, String topping_string, String topping_letter, double topping_cost)</li>
+   <li><b>PizzaToppingFactory example method</b>: public static 
+DecoratedPizza addPepperoni(DecoratedPizza dec_pizza) //create a 
+PizzaTopping with the Pepperoni values and add it to the passed 
+DecoratedPizza, returning the result
+</li></ul>
+
+<p>
+<b>PizzaDiscount</b>
+</p><p>
+
+</p><ul>
+   <li><b>PizzaDiscount constructor</b>: public 
+PizzaDiscount(DecoratedPizza pizza_component, String msg, double 
+discount)  //discount is assumed to be between 0.0 and 1.0</li>
+</ul>
+
+<p>
+
+A PizzaDiscount extends DecoratedPizza adjusting the final cost of the pizza by the discount.
+Add an addDiscount method to PizzaBuilder.  <b>Adjust addTopping to make sure that a topping is not added
+after the discount</b>.  That is, a PizzaTopping can only be connected to other PizzaToppings or a Pizza (use instanceof).
+PizzaBuilder really helps manage this complexity, keeping this code out of the other classes.
+
+</p><p>
+
+In PizzaDriver, ask the user if they are senior citizens.  If so, apply a 10% discount to the order.
+
+</p><p>
+<b>PizzaFee</b>
+</p><p>
+
+</p><ul>
+   <li><b>PizzaFee constructor</b>: public PizzaFee(DecoratedPizza pizza_component, String msg, double fee)</li>
+</ul>
+
+<p>
+
+A PizzaFee extends DecoratedPizza, adding on a flat fee to the total order at the very end.
+Add an addFee method to PizzaBuilder.
+
+</p><p>
+
+<b>Adjust addDiscount</b> so that PizzaDiscounts can only be connected to other PizzaDiscounts, PizzaToppings, or Pizza.
+As PizzaDriver will probably ask for these items where appropriate, I will look at your code to make sure
+this check is performed.
+
+</p><p>
+
+In PizzaDriver, ask the user if they want delivery.  If so, add a $2.50 delivery fee to the order.
+
+</p><p>
+
+</p><pre>Would you like to order a pizza (y/n)? y
+
+1. Meat Lover's
+2. Veggie Lover's
+3. Hawaiian
+4. Build Your Own
+
+Select from the above: 4
+What size pizza (S/M/L)? ZWhat size pizza (S/M/L)? m
+What type of crust (thin/hand/pan)? thin
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+m
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+g
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+s
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+m
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+q
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+d
+
+Are you a senior citizen (y/n)? n
+Do you need this pizza delivered (y/n)? y
+Your pizza: 
+Size: M
+Crust: THIN
+Toppings:
+mushrooms
+green peppers
+sausage
+mushrooms
+delivery
+
+The cost of your pizza is $13.75
+
+Would you like to order another pizza (y/n)? 
+1. Meat Lover's
+2. Veggie Lover's
+3. Hawaiian
+4. Build Your Own
+
+Select from the above: 1
+What size pizza (S/M/L)? L
+What type of crust (thin/hand/pan)? pan
+Are you a senior citizen (y/n)? y
+Do you need this pizza delivered (y/n)? n
+Your pizza: 
+Size: L
+Crust: PAN
+Toppings:
+pepperoni
+sausage
+ham
+senior discount
+
+The cost of your pizza is $12.47
+
+Would you like to order another pizza (y/n)? 
+1. Meat Lover's
+2. Veggie Lover's
+3. Hawaiian
+4. Build Your Own
+
+Select from the above: 4
+What size pizza (S/M/L)? S
+What type of crust (thin/hand/pan)? HAND
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+P
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+O
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+J
+(P)epperoni,(O)nions,(G)reen Peppers,(S)ausage,(M)ushrooms,(D)one  
+d
+
+Are you a senior citizen (y/n)? n
+Do you need this pizza delivered (y/n)? y
+Your pizza: 
+Size: S
+Crust: HAND
+Toppings:
+pepperoni
+onions
+delivery
+
+The cost of your pizza is $10.77
+
+Would you like to order another pizza (y/n)? 
+You ordered 3 pizza(s) for a grand total of $36.99.
+</pre>
+<p>
+
+</p><p><b>Program Specification:</b>
+</p><p>
+
+</p><ul>
+
+   <li>Creation of a custom classes using composition and a design pattern</li>
+   <ul>
+      <li>Encapsulation (private instance variables of different types, including Object types)</li>
+      <li>Multiple constructors</li>
+      <li>Get methods to report specific states (message forwarding)</li>
+      <li>Set methods to control state changes</li>
+      <li>Custom toString to report the state of the object</li>
+      <li>Computation using state information</li>
+      <li><b>Decorator design pattern</b>  //easy to add new classes to the project</li>
+      <li><b>Builder design pattern</b>  //input validation external to the core classes</li>
+   </ul>
+ 
+   <li>Driver class</li>
+   <ul>
+      <li>Use of conditional statements</li>
+      <li>Use of a while loop with a sentinel value</li>
+      <li>Creation and use of helper methods to simplify problem solving</li>
+      <li>Object parameters</li>
+      <li><b>Polymorphism</b></li>
+   </ul>
+
+</ul>
+
+<!--
+<p>
+<b>Program Documentation:</b><br>
+
+Comment Using Javadoc:
+
+<ul>
+   <li>Pizza.java</li>
+   <li>DecoratedPizza.java</li>
+   <li>PizzaBuilder.java  //done in class</li>
+   <li>PizzaDriver.java</li>
+</ul>
+-->
+<p>
+
+<b>Submission:</b>
+<br>Electronic Submission: <b>All files needed to run your program!</b>
+
+</p><p>
+
+</p><hr>
+
+<a name="prog3"></a>
+
+<p>Program #3 Master Mind <b>10%</b><br>
+  Due: 11/08/2017<br>
+  Assignment: </p>
+
+<p>
+
+<b>Starting Files:</b>
+</p><ul>
+   <li><a href="https://mboshart.dyndns.org/~mboshart/2310programs/program03/prog3_starting_files.zip">prog3_starting_files.zip</a></li>
+</ul>
+
+<p>
+<b>MasterMind</b>
+</p><p>
+
+Master Mind is a code breaking game. A secret code is selected by one player and another player tries to guess the code.
+The secret code has four positions and each position is assigned a color out of seven possible colors.
+It is legal to have multiple positions assigned the same color.
+In this version of Master Mind, the computer selects the secret code randomly. 
+
+</p><p>
+
+To win the game, the player
+must determine the correct position and color for each position of the randomly generated secret code.
+A guess is composed of selecting a color for each of four positions.  After each guess, feedback is obtained which
+is used to improve the guess until an exact match of each color and position of the secret code is obtained.
+The secret code must be obtained in eight or fewer guesses.  
+
+</p><p>
+
+Feedback is determined as follows:<br>
+</p><ul>
+   <li>A black "button" is awarded for each of the four guess elements that matches both color and position of the secret code.</li>
+   <li>A white "button" is awarded for each of the four guess elements that matches a color but is not in the correct position.</li>
+   <li>A guess element can be awarded at most one button (may be tricky).</li>
+   <li>It is likely that a given guess will have fewer than four (and maybe zero) buttons awarded.</li>
+</ul>
+
+<p>
+<b>Guess</b>
+</p><p>
+
+A Guess is composed of a guess id (from 1 to 8, representing the numerical ordering of the Guess) 
+and a List&lt;Integer&gt; containing four color ids.
+The four color ids represent the player's attempt at deciphering the secret code with that Guess.
+Thus, each color in a Guess is stored as an integer (red = 1...white = 7).
+The index of the color id in the List corresponds to the position of that color in the player's Guess.
+For example, if the Guess is red in position 1, black in position 2, black in position 3, and red
+in position 4, then the List contains 1, 6, 6, 1.
+Note that the secret code is also a Guess.
+
+</p><p>
+
+The <b>reportResult</b> method compares two Guesses (one of which may be the secret code, but frequently will not be)
+and determines the number of black and white buttons
+to assign to the Guess.  Complete this method to compute the number of white buttons (computing
+the black buttons is easy and has been done for you).  You will need to remove elements from the Lists
+(copies of the Lists have been made for this reason) so that you don't assign too many white buttons.
+This method is <b>essential</b> not only for evaluating the player's Guess as compared
+to the secret code, but also to compare arbitrary Guesses
+to one another for the AI to find a reasonable next Guess to make.
+
+</p><p>
+
+The <b>computeResult</b> method calls the reportResult method when a comparison to the secret code is required.
+If the player is a human, the Guess may contain fewer than 4 color ids as the human player 
+may not have completed their Guess, so an isFull() check is required.
+If the player is a computer, it is assumed that the Guess is complete.
+
+</p><p>
+
+A Guess also contains an integer array of size two containing the number of black buttons and white buttons
+assigned to a valid and completed Guess when compared with the secret code.
+The contents of this array are set in computeResult following the comparison to the secret code.
+
+</p><p>
+
+You should have a playable game after completing the Guess class.
+
+</p><p>
+<b>MasterMindAI: Strategy Design Pattern</b>
+</p><p>
+
+A MasterMind computer player must, at a minimum, return a valid Guess:
+
+</p><p>
+
+</p><pre>public interface MasterMindAI
+{
+   public Guess nextGuess();
+}
+</pre>
+
+<p>
+<b>MasterMindAIRandom</b>
+</p><p>
+
+The simplest way to implement the interface is to populate the List of color ids with four random integers
+from 1 to 7 and to return the associated Guess.  This is actually a useful class as it allows you to find bugs
+related to incorporating the AI into the MasterMind game rather than bugs in the AI itself.
+
+</p><p>
+<b>MasterMindState: State Design Pattern</b>
+</p><p>
+
+You need to be able to switch back and forth between a human player and a computer player.  This is readily
+accomplished using the MasterMindState interface:
+
+</p><p>
+
+</p><pre>public interface MasterMindState
+{
+   public void mouseClicked(int x_click, int y_click);
+}
+</pre>
+
+<p>
+
+The four integers (0, 1, 2, 3) at the bottom right of the GUI allow the user to switch between human player mode (0)
+and AI mode (1, 2, or 3 for each of three different AI strategies).
+If the human player is active, then the current state of MasterMind is set to <b>MasterMindPlayerState</b> where mouse
+clicks are examined to see if a color has been clicked on, and, if so, the color is added to the
+Guess.  Further, if the human player is not in the middle of selecting four colors for a Guess, the mouse
+click is checked to see if the current state should be switched to <b>MasterMindAIState</b>.  
+A similar procedure
+is required when the current state is MasterMindAIState.  Mouse clicks are examined to see if the user wants to switch
+to human player mode.  Otherwise, the mouse click indicates that the AI should make another Guess.
+
+</p><p>
+
+MasterMindAIState also stores the different AIs in an array of type MasterMindAI.  
+Let MasterMindRandom be the default AI.  Eventually,
+you will add the more complex AIs described next.  The user will be able to switch between AIs by MasterMindAIState
+using a different AI to make the nextGuess decision.
+
+</p><p>
+<b>MasterMindGameOverState</b>
+</p><p>
+
+When the human player or AI has either used up all eight Guesses or the secret code has been identified,
+MasterMind should enter MasterMindGameOverState so that mouse clicks no longer do anything.  The user
+will know whether they succeeded or not based on whether the last Guess generated 4 black buttons or not.
+
+</p><p>
+<b>MasterMindDriver</b>
+</p><p>
+
+Allow the user to pass an integer parameter to MasterMindDriver.  If no parameter or a 0 is passed to MasterMindDriver, 
+start MasterMind in the human player mode. If the parameter is not an integer, start MasterMind in the human
+player mode.  Otherwise, start MasterMind in the AI mode with MasterMindAIRandom as the default AI.  
+
+</p><p>
+
+Create appropriate build.xml and build.bat files to allow the parameter to be passed to MasterMindDriver at
+the command prompt.  Let the user pass the drive letter to ant as well.
+
+</p><p>
+<b>MasterMindAIConsistent</b>
+</p><p>
+
+Use the following algorithm to create a decent AI that will decipher the secret code in 8 attempts or fewer.  
+The first Guess
+is randomly generated just as is done for MasterMindAIRandom.  
+The second Guess is initially random, but the Guess must satisfy a test
+before it is returned as the official second Guess.  
+This "trial" Guess is compared to the first, randomly generated Guess.  The comparison involves computing
+the black and white buttons <b>as if</b> the second Guess was the secret code.  If the number of black and white
+buttons in the test comparison 
+does not match the actual black and white buttons returned by MasterMind after the first Guess (obtained
+by comparison to the secret code), then it is
+impossible for the second Guess to be the secret code, and a new randomly generated trial Guess is obtained.  
+The process repeats in this manner until a suitable second Guess is found and returned to MasterMind.  
+
+</p><p>
+
+As the number of Guesses increases, the constraints on new Guesses also increases as a new Guess must
+be compared to <b>all</b> of the previous Guesses, generating the identical black and white button results
+that MasterMind assigned to each previous Guess by comparing them to the secret code.  Eventually, there are only a few
+Guesses that can satisfy all of the constraints, one of which is the secret code.
+
+</p><p>
+<b>MasterMindAIMiniMax</b>
+</p><p>
+
+Another approach that never takes more than 6 attempts but takes more time for early Guesses is called <b>MiniMax</b>.
+The idea is to create a List containing all possible Guesses (how many are there?).
+The first Guess in the List has all possible combinations of black and white buttons 
+(how many are there of these?) assigned to it, one at a time. 
+Since we don't know what button combination would be returned for that Guess, we must consider them all.
+A pass through all other Guesses for each of the black and white button assignments is made, counting up the number of
+other Guesses in the List that would be eliminated as possible secret codes. 
+That is, we increment the count if comparing the two Guesses does not generate the specific
+black and white button count under consideration.
+The <b>smallest</b> of these eliminations (the <b>mini</b> part) is stored, along with the Guess that generated it.
+The AI is keeping track of the worst case that can occur for that particular Guess.
+
+</p><p>
+
+The second Guess in the List goes through the same process.  If the smallest number of eliminations for this Guess
+is <b>larger</b> (the <b>max</b> part) than the previous smallest number of eliminations, store this new value and
+the Guess that generated it, otherwise keep the previous values.  The AI is keeping track of the best of the worst
+cases for all of the Guesses.
+
+</p><p>
+
+At the end of the process, the computer player knows which Guess will eliminate the most other Guesses in the worst
+case.  Make this Guess.  Now remove from the List of Guesses those that are not consistent with the black and white
+buttons returned from MasterMind (as well as the Guess just made).  Repeat the entire process for the second Guess.
+
+</p><p>
+
+The first Guess takes a long time to compute, but it is always the same (why?).  To save a substantial amount of time,
+hardcode the first Guess to be red, blue, green, purple (or any four different colors).
+
+</p><p>
+<b>MasterMindAI Switching</b>
+</p><p>
+
+As long as your computer players have access to all of the Guesses made so far (and they do), 
+they should be able to pick up from any point, allowing the user to switch between AIs and between human player
+and any of the AIs without any problems.  A commented out method, <b>int changeAI(int x, int y)</b>, can be used to
+detect when the user wants to change AI/human player mode.
+
+</p><p>
+
+<b>Submission:</b>
+<br>Electronic Submission: <b>All files needed to run your program</b>.
+
+</p><hr>
+
+<a name="prog4"></a>
+
+<p>Program #4 MP3 Player <b>10%</b><br>
+  Due: 12/08/2017<br>
+  Assignment: </p>
+<p><b>Program Execution:</b><br>
+
+</p><p>
+
+<b>Starting Files:</b>
+</p><ul>
+   <li><a href="https://mboshart.dyndns.org/~mboshart/2310programs/program04/program04.zip">program04.zip</a> //files, songs, art, etc.</li>
+   <li><a href="https://mboshart.dyndns.org/~mboshart/2310programs/javadoc/program04/index.html">javadoc</a></li>
+</ul>
+
+<p>
+
+<b>Artists</b>
+
+</p><p>
+
+Write an Artist class to store all of the CDs for a particular Artist.
+Use the <b>provided implementation of TableInterface</b> to do this.
+The GUI component that needs all of the CDs for a particular Artist can use the Iterator from this class.
+
+</p><p>
+
+<b>Music</b>
+
+</p><p>
+
+Write a Music class to store all of the Artists in the music collection.
+Use the <b>provided implementation of TableInterface</b> to do this.
+The GUI component that needs all of the Artists can use the Iterator for this class.
+
+</p><p>
+
+<b>MP3 and MP3Listener (<b>Observer design pattern</b>)</b>
+
+</p><p>
+
+MP3Listener has one method: <b>public void mp3Done()</b>
+
+</p><p>
+
+When an MP3 has finished playing, any registered listeners (classes that implement the
+MP3Listener interface) should be notified so that the
+GUI component that displays the current song can be cleared out.  If the user starts another
+song while one is already playing, the first song should be stopped and the new song
+started. 
+
+</p><p>
+
+<b>GUI</b>
+
+</p><p>
+
+Use the <b>Model-View-Controller design pattern</b> in creating your GUI.
+Use a layout manager of your choice to design your MP3Player.  You
+are required to use at least one of each of the following GUI components:
+
+</p><p>
+
+</p><ol>
+   <li>JComboBox</li>
+   <li>JList (you will probably want to extend JList to act as a drag source or a drop target)</li>
+   <li>JScrollPane</li>
+   <li>DrawPanel (extends JPanel) that will display some graphics</li>     
+   <li>Drag and Drop (one source and one destination)</li>
+   <li>Mouse Interaction</li>
+   <li>ImageFilter</li>
+</ol>
+
+<p>
+
+Various components in your GUI will respond to user input.
+This is <b>event programming</b>.
+There may be times when you want to stop a given component from responding to user input.
+Check the API for the <b>removeActionListener</b> method in the JComboBox class.
+
+</p><p>
+
+<b>Drag and Drop</b>
+
+</p><p> 
+
+You will create a drag source and a drop target in your GUI so that the user can 
+select a song to play.  If a song is currently playing, it will immediately terminate
+and the new song will begin if a new song is dropped into the drop target.  
+You will need to implement Transferable to hold
+a Song object from the drag source to the drop target.
+
+</p><p>
+
+<b>Threads</b>
+
+</p><p>
+
+You will need to do some basic thread management so that your song will play
+and the user can continue to interact with the MP3Player.
+You are expected to <b>correctly</b> terminate any currently running threads (i.e. a song
+hasn't finished playing, but a new one should start).
+
+</p><p>
+
+<b>Image Filter</b>
+
+</p><p>
+
+Perform some kind of image filtering so that when the user mouses over
+the album art in your Draw panel, the CD image changes.  
+The best way to do this is to have two images load for each CD, the album
+art and the modified album art.  When the mouse moves over the album art, switch the image
+that is drawn by the CD.
+
+</p><p>
+
+The provided files are set up to use BlueChannelFiltering.
+<b>For extra credit, create another image filter that is not based off of the provided filter.
+The more creative your filter is, the more extra credit you will receive</b>.
+
+</p><p>
+
+</p><center><img src="CSC2310_programming_assignments_files/program04a.jpg"></center>
+My mp3 player layout.  Feel free to customize your layout as long as your GUI has all of the required components.
+
+<p>
+
+</p><center><img src="CSC2310_programming_assignments_files/program04b.jpg"></center>
+The artwork is highlighted when the mouse moves over it.  This is just one of many image filters available on the internet.
+
+<p>
+
+<!--
+<b>Documentation</b>
+
+<p>
+
+The documentation for this assignment should follow all of the conventions discussed
+in class.  
+-->
+</p><p><b>Program Specification:</b>
+</p><p>
+
+</p><ul>
+   <li>GUIs and repaint</li>
+   <li>Event programming</li>
+   <li>Layout managers</li>
+   <li>Model-View-Controller design pattern</li>
+   <li>Observer design pattern</li>
+   <li>Tables</li>
+   <li>Mouse Motion</li>
+   <li>Image Filters</li>
+   <li>Threads</li>
+   <li>Drag and Drop</li>
+</ul>
+
+<p>
+
+<b>Submission:</b>
+<br>Electronic Submission: <b>All files needed to run your program</b> except the images and mp3s (unless you have modified your program to use your own images and mp3s).
+
+<br>
+<br>
+<br>
+
+
+
+ </p></body></html>

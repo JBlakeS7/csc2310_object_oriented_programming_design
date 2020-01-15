@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=boolean\ isEmpty()
+comment0.text=\r\n\ \ Is\ the\ list\ empty\ or\ not?.\ <br>\r\n\ \ Preconditions\:\ <br>\ none\ <br>\r\n\ \ Postconditions\:\ <br>\ true\ is\ returned\ if\ the\ list\ contains\ no\ items,\ otherwise\ false\ is\ returned\ <br>\r\n\ \ Throws\:\ none\ <br>\r\n
+comment1.params=
+comment1.target=int\ size()
+comment1.text=\r\n\ \ How\ many\ items\ are\ in\ the\ list?.\ <br>\r\n\ \ Preconditions\:\ <br>\ none\ <br>\r\n\ \ Postconditions\:\ <br>\ the\ number\ of\ items\ in\ the\ list\ is\ returned\ <br>\r\n\ \ Throws\:\ none\ <br>\r\n
+comment2.params=item
+comment2.target=void\ add(KeyedItem)
+comment2.text=\r\n\ \ Add\ an\ item\ to\ the\ list\ in\ ascending\ order\ by\ search\ key.\ <br>\r\n\ \ Preconditions\:\ \ <br>\ item\ is\ the\ KeyedItem\ to\ be\ inserted\ into\ the\ list\ <br>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ item\ is\ not\ null\ and\ has\ a\ search\ key\ that\ is\ not\ already\ present\ in\ the\ list\ <br>\r\n\ \ Postconditions\:\ <br>\ the\ item\ is\ inserted\ into\ the\ list\ in\ ascending\ order\ by\ search\ key\ (if\ the\ preconditions\ are\ met)\ <br>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ otherwise,\ item\ is\ unaffected\ <br>\r\n\ \ Throws\:\ ListException\ if\ item\ is\ null\ or\ there\ is\ an\ item\ with\ search\ key\ sk\ already\ in\ the\ list\ <br>\r\n
+comment3.params=sk
+comment3.target=void\ remove(java.lang.Comparable)
+comment3.text=\r\n\ \ Removes\ the\ item\ with\ the\ provided\ search\ key\ from\ the\ list.\ <br>\r\n\ \ Preconditions\:\ \ <br>\ search\ key\ (sk)\ is\ not\ null\ <br>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a\ KeyedItem\ with\ the\ provided\ search\ key\ (sk)\ is\ present\ in\ the\ list\ <br>\r\n\ \ Postconditions\:\ <br>\ the\ item\ with\ the\ provided\ search\ key\ is\ removed\ from\ the\ list\ <br>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ remaining\ items\ are\ in\ ascending\ order\ by\ search\ key\ <br>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ otherwise,\ sk\ is\ unaffected\ <br>\r\n\ \ Throws\:\ ListException\ if\ sk\ is\ null\ or\ an\ item\ with\ search\ key\ sk\ is\ not\ present\ in\ the\ list\ <br>\r\n
+comment4.params=sk
+comment4.target=KeyedItem\ get(java.lang.Comparable)
+comment4.text=\r\n\ \ Returns\ the\ KeyedItem\ with\ search\ key\ sk.\ <br>\r\n\ \ Preconditions\:\ \ <br>\ search\ key\ (sk)\ is\ not\ null\ <br>\r\n\ \ Postconditions\:\ <br>\ the\ item\ with\ search\ key\ sk\ is\ returned\ if\ such\ an\ item\ is\ present\ <br>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ null\ is\ returned\ if\ no\ items\ in\ the\ list\ have\ search\ key\ sk\ <br>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sk\ itself\ is\ unaffected\ <br>\r\n\ \ Throws\:\ none\ <br>\r\n
+comment5.params=
+comment5.target=void\ removeAll()
+comment5.text=\r\n\ \ Removes\ all\ of\ the\ items\ from\ the\ list.\ <br>\r\n\ \ Preconditions\:\ <br>\ none\ <br>\r\n\ \ Postconditions\:\ <br>\ the\ list\ contains\ no\ items\ <br>\r\n\ \ Throws\:\ none\ <br>\r\n
+numComments=6

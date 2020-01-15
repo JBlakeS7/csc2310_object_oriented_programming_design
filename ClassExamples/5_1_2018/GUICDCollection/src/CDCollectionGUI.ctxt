@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=CDCollectionGUI
+comment1.params=
+comment1.target=CDCollectionGUI()
+comment2.params=fileName
+comment2.target=CDCollectionGUI(java.lang.String)
+comment3.params=
+comment3.target=void\ initButtons()
+comment4.params=
+comment4.target=void\ initMovementButtons()
+comment5.params=
+comment5.target=void\ clearAllTextFields()
+comment6.params=
+comment6.target=void\ initCDPanel()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=forest
+comment0.target=Season(Forest)
+comment1.params=
+comment1.target=void\ nextSeason()
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+comment3.params=
+comment3.target=Forest\ getForest()
+numComments=4

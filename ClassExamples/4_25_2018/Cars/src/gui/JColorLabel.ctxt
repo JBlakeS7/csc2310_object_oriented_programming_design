@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=JColorLabel
+comment1.params=text
+comment1.target=JColorLabel(java.lang.String)
+comment2.params=c
+comment2.target=JColorLabel(java.awt.Color)
+comment3.params=c\ image
+comment3.target=JColorLabel(java.awt.Color,\ javax.swing.Icon)
+comment4.params=c\ image\ horizontalAlignment
+comment4.target=JColorLabel(java.awt.Color,\ javax.swing.Icon,\ int)
+comment5.params=c\ text
+comment5.target=JColorLabel(java.awt.Color,\ java.lang.String)
+comment6.params=c\ text\ horizontalAlignment
+comment6.target=JColorLabel(java.awt.Color,\ java.lang.String,\ int)
+comment7.params=c\ text\ image\ horizontalAlignment
+comment7.target=JColorLabel(java.awt.Color,\ java.lang.String,\ javax.swing.Icon,\ int)
+comment8.params=c
+comment8.target=void\ setup(java.awt.Color)
+numComments=9

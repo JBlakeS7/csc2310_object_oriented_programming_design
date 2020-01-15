@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=game
+comment0.target=StateLose(CrapsGame)
+comment1.params=roll
+comment1.target=java.lang.String\ processRoll(int)
+numComments=2

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RationalCollectReciprocalsCommand
+comment1.params=
+comment1.target=RationalCollectReciprocalsCommand()
+comment2.params=rn
+comment2.target=void\ execute(RationalNumber)
+comment3.params=
+comment3.target=RationalNumbers\ getReciprocals()
+numComments=4

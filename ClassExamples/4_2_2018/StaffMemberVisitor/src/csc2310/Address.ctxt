@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Address
+comment0.text=\r\n\ \ Represents\ a\ street\ address.\r\n
+comment1.params=street\ town\ st\ zip
+comment1.target=Address(java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment1.text=\r\n\ \ Sets\ up\ this\ Address\ object\ with\ the\ specified\ data.\ \ \r\n
+comment2.params=
+comment2.target=java.lang.String\ getStreet()
+comment2.text=\r\n\ \ Return\ the\ street\ address.\ \ \r\n
+comment3.params=
+comment3.target=java.lang.String\ getCity()
+comment3.text=\r\n\ \ Return\ the\ city.\ \ \r\n
+comment4.params=
+comment4.target=java.lang.String\ getState()
+comment4.text=\r\n\ \ Return\ the\ state.\ \ \r\n
+comment5.params=
+comment5.target=int\ getZip()
+comment5.text=\r\n\ \ Return\ the\ zip\ code.\ \ \r\n
+comment6.params=ct
+comment6.target=void\ setCity(java.lang.String)
+comment6.text=\r\n\ \ Set\ the\ city.\ \ \r\n
+comment7.params=other
+comment7.target=boolean\ equals(Address)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment8.text=\r\n\ \ Returns\ this\ Address\ object\ as\ a\ string.\r\n
+numComments=9

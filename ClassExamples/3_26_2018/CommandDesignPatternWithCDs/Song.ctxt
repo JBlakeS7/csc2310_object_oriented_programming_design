@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=title\ length
+comment0.target=Song(java.lang.String,\ java.lang.String)
+comment1.params=file\ count
+comment1.target=void\ writeSong(FileIO,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getTitle()
+comment3.params=
+comment3.target=int\ getLength()
+numComments=4

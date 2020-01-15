@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RationalAddCommand
+comment1.params=
+comment1.target=RationalAddCommand()
+comment2.params=
+comment2.target=RationalNumber\ getResult()
+comment3.params=rn_temp
+comment3.target=void\ execute(RationalNumber)
+numComments=4

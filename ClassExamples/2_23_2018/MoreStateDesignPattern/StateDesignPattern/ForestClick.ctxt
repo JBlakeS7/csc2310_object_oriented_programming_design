@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=g\ width\ height
+comment0.target=void\ draw(java.awt.Graphics,\ int,\ int)
+comment1.params=x\ y
+comment1.target=void\ mouseClicked(int,\ int)
+comment2.params=
+comment2.target=ForestClick()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

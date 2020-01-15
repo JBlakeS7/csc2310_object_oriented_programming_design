@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=num\ minX\ maxX\ minY\ maxY\ minW\ maxW\ minH\ maxH\ minD\ maxD
+comment0.target=Forest(int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int)
+comment1.params=
+comment1.target=void\ nextSeason()
+comment2.params=
+comment2.target=Season\ getWinterState()
+comment3.params=
+comment3.target=Season\ getSummerState()
+comment4.params=
+comment4.target=Season\ getAutumnState()
+comment5.params=state
+comment5.target=void\ setState(Season)
+comment6.params=g
+comment6.target=void\ draw(java.awt.Graphics)
+comment7.params=g
+comment7.target=void\ drawSummerTrees(java.awt.Graphics)
+comment8.params=g
+comment8.target=void\ drawAutumnTrees(java.awt.Graphics)
+comment9.params=g
+comment9.target=void\ drawWinterTrees(java.awt.Graphics)
+numComments=10

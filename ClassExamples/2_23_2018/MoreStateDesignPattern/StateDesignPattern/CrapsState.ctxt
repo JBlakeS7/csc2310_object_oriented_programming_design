@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=roll
+comment0.target=java.lang.String\ processRoll(int)
+comment0.text=\ Determine\ what\ action\ to\ take\ in\ the\ craps\ game\ based\ on\r\n\ \ current\ value\ of\ the\ rolled\ dice.\ \ Returns\ a\ string\r\n\ \ corresponding\ to\ the\ result.\r\n\ @param\ \ roll\ \ \ \ the\ value\ of\ the\ dice\ roll\r\n
+numComments=1

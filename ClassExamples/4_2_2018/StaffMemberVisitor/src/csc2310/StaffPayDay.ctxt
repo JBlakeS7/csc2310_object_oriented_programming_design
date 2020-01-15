@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=StaffPayDay
+comment1.params=
+comment1.target=double\ getPayroll()
+comment2.params=emp
+comment2.target=void\ visit(Employee)
+comment3.params=emp
+comment3.target=void\ visit(Volunteer)
+comment4.params=emp
+comment4.target=void\ visit(Hourly)
+comment5.params=emp
+comment5.target=void\ visit(Executive)
+numComments=6
